@@ -19,6 +19,10 @@ Route::middleware('auth')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+
+
+
+// ROTTE PER AUTH DI JWT
 Route::group([
 
     'middleware' => 'api',
@@ -30,5 +34,6 @@ Route::group([
     Route::post('login', [AuthController::class, 'login']);
     Route::post('logout', [AuthController::class, 'logout']);
     Route::post('refresh', [AuthController::class, 'refresh']);
+    Route::get('/user', [AuthController::class, 'index']);
     Route::post('me', 'AuthController@me');
 });
