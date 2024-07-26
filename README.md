@@ -35,6 +35,8 @@ Per clonare la repository, segui questi passaggi:
              - npm run dev
              - php artisan serve.
 
+
+https://github.com/LucaB98/front-aimage  <-- Link parte front-end
 Ricorda!! Attivare sempre il server personale.
 Dopo tutti questi procedimenti l'app e' utilizzabile
    
